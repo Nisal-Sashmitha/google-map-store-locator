@@ -7,10 +7,38 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style/style.css">
+        <script src="https://kit.fontawesome.com/c939d0e917.js" crossorigin="anonymous"></script>
+
     </head>
     <body>
-        <div class="container home-page">
+        <div class="title">Store Locator</div>
+        <div class="search-container">
+            <div class="search">
+                <input type="text" placeholder="Enter Zip" />
+                <i class="fas fa-search"></i>
+            </div>
+            
         </div>
+        <div class="stores-list-container">
+            
+        </div>
+        
+        <div id="map">
+        </div>
+        <script>
+
+            function initMap() {
+            // Create the map.
+            let lostAngeles = {lat: 34.063380, lng: -118.358080};
+             const map = new google.maps.Map(document.getElementById('map'), {
+                 zoom: 7,
+                 center: lostAngeles,
+             });
+
+}
+        </script>
         <script src="js/index.js" async defer></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUpmEwq0lwCTE0_PCByCG_IXJ791G1Vlg&libraries=places&callback=initMap&solution_channel=GMP_codelabs_simplestorelocator_v1_a">
+        </script>
     </body>
 </html>

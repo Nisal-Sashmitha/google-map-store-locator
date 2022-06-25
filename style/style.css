@@ -2,3 +2,69 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+#map{
+    height: 100vh;
+}
+.title {
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 88px;
+    color: #333333;
+    position: absolute;
+    z-index: 10;
+    top: 100px;
+    left: 100px;
+}
+
+.search-container {
+    width: 400px;
+    height: 60px;
+    background-color: #454E53;
+    border-radius: 30px;
+    position: absolute;
+    z-index: 10;
+    top: 230px;
+    left: 100px;
+    display: flex;
+}
+.search {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.search input {
+    flex: 1;
+    font-size: 25px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+}
+.stores-list-container{
+    width: 400px;
+    position: absolute;
+    z-index: 10;
+    top: 320px;
+    left: 100px;
+    background-color: white;
+    border-radius: 30px;
+    bottom: 20px;
+}
+
+
+::placeholder {
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: white;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+   color: white;
+  }
